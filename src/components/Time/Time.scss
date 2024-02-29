@@ -1,0 +1,22 @@
+.time-container {
+    margin: auto;
+    padding: 20px;
+    max-width: 95vw;
+    background-color: rgba(#aaa, .1);
+    border-radius: 10px;
+    max-width: 768px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 300ms;
+
+    &:hover {
+        border-color: white;
+        transform: translateY(-5px);
+        border-radius: 0;
+    }
+}
+
+.time {
+    font-weight: 500;
+    font-size: 22px;
+}
