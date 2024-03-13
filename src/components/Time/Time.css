@@ -1,21 +1,64 @@
 .time-container {
   margin: auto;
-  padding: 20px;
-  max-width: 95vw;
-  background-color: rgba(170, 170, 170, 0.1);
-  border-radius: 10px;
-  max-width: 768px;
-  cursor: pointer;
-  border: 2px solid transparent;
   transition: all 300ms;
-}
-.time-container:hover {
-  border-color: white;
-  transform: translateY(-5px);
-  border-radius: 0;
+  max-width: 600px;
+  width: 100%;
 }
 
-.time {
+.card-list {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  margin: auto;
+}
+
+.time-content {
+  border-radius: 20px;
+  background-image: radial-gradient(circle at top right, blue, #6e00ff, purple);
+  padding: 20px;
+}
+
+.time-card {
+  padding: 5px;
+}
+
+.time-card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 300ms;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.time-card-target {
+  text-transform: uppercase;
+  padding: 10px 5px;
   font-weight: 500;
+}
+
+.time-card-value {
+  padding: 5px;
   font-size: 22px;
+  font-weight: bold;
+}
+
+.top-card {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 580px) {
+  .card-list {
+    grid-template-columns: 100%;
+  }
 }/*# sourceMappingURL=Time.css.map */
