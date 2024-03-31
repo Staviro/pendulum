@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with Pendulum
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Purpose
+
+The aim of web application is to simply understand working with React states.
+For this application I will be focusing on useState to manage the current time, as well as calculate the amount of minutes and seconds remaining until the next hour starts.
 
 ## Available Scripts
 
