@@ -29,31 +29,24 @@ const Time = () => {
                 <div className='card-list'>
                     <div className='time-card'>
                         <div className='time-card-content'>
-                            <div className='time-card-target'>
-                                Hour(s)
-                            </div>
                             <div className='time-card-value'>
-                                { currentTime.Hour }
+                                { currentTime.Hour < 10 ? "0" + currentTime.Hour : currentTime.Hour }
                             </div>
                         </div>
                     </div>
+                    <span>:</span>
                     <div className='time-card'>
                         <div className='time-card-content'>
-                            <div className='time-card-target'>
-                            Minute(s)
-                            </div>
                             <div className='time-card-value'>
-                                { currentTime.Minutes }
+                                { currentTime.Minutes < 10 ? "0" + currentTime.Minutes : currentTime.Minutes }
                             </div>
                         </div>
                     </div>
+                    <span>:</span>
                     <div className='time-card'>
                         <div className='time-card-content'>
-                            <div className='time-card-target'>
-                                Second(s)
-                            </div>
                             <div className='time-card-value'>
-                                { currentTime.Seconds }
+                                { currentTime.Seconds < 10 ? "0" + currentTime.Seconds : currentTime.Seconds }
                             </div>
                         </div>
                     </div>
